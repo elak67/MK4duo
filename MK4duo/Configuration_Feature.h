@@ -197,7 +197,7 @@
  * Uncomment SINGLENOZZLE to enable this feature                       *
  *                                                                     *
  ***********************************************************************/
-//#define SINGLENOZZLE
+#define SINGLENOZZLE
 /***********************************************************************/
 
 
@@ -577,7 +577,7 @@
  * This feature is enabled by default for scara printer.               *
  *                                                                     *
  ***********************************************************************/
-//#define QUICK_HOME
+#define QUICK_HOME
 /***********************************************************************/
 
 
@@ -603,7 +603,7 @@
  * This feature is not compatible with delta and scara printer.        *
  *                                                                     *
  ***********************************************************************/
-//#define FORCE_HOME_XY_BEFORE_Z
+#define FORCE_HOME_XY_BEFORE_Z
 /***********************************************************************/
 
 
@@ -1027,10 +1027,10 @@
  * Uncomment EEPROM FLASH for use writing EEPROM on Flash Memory (Only for DUE)                                         *
  *                                                                                                                      *
  ************************************************************************************************************************/
-//#define EEPROM_SETTINGS
+#define EEPROM_SETTINGS
 
 //#define EEPROM_CHITCHAT // Uncomment this to enable EEPROM Serial responses.
-//#define EEPROM_SD
+#define EEPROM_SD
 //#define EEPROM_FLASH
 //#define DISABLE_M503
 /************************************************************************************************************************/
@@ -1039,12 +1039,12 @@
 /*****************************************************************************************
  *************************************** SDCARD *******************************************
  ****************************************************************************************/
-//#define SDSUPPORT
+#define SDSUPPORT
 
 //#define SDSLOW              // Use slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
 //#define SDEXTRASLOW         // Use even slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
 //#define SD_CHECK_AND_RETRY  // Use CRC checks and retries on the SD communication
-//#define SD_EXTENDED_DIR     // Show extended directory including file length. Don't use this with Pronterface
+#define SD_EXTENDED_DIR     // Show extended directory including file length. Don't use this with Pronterface
 
 // Decomment this if you have external SD without DETECT_PIN
 //#define SD_DISABLED_DETECT
@@ -1061,7 +1061,7 @@
 //#define MENU_ADDAUTOSTART
 
 // Enable this option to scroll long filenames in the SD card menu
-//#define SCROLL_LONG_FILENAMES
+#define SCROLL_LONG_FILENAMES
 
 /**
  * Sort SD file listings in alphabetical order.
@@ -1158,7 +1158,7 @@
 //
 // :['JAPANESE', 'WESTERN', 'CYRILLIC']
 //
-#define DISPLAY_CHARSET_HD44780 JAPANESE
+#define DISPLAY_CHARSET_HD44780 WESTERN
  
 #define SHOW_BOOTSCREEN
 //#define SHOW_CUSTOM_BOOTSCREEN
@@ -1176,7 +1176,7 @@
 //                 https://github.com/olikraus/U8glib_Arduino
 //
 //#define ULTRA_LCD   // Character based
-//#define DOGLCD      // Full graphics display
+#define DOGLCD      // Full graphics display
 
 
 // Additional options for Graphical Displays
@@ -1215,7 +1215,7 @@
 
 // This option overrides the default number of encoder pulses needed to
 // produce one step. Should be increased for high-resolution encoders.
-#define ENCODER_PULSES_PER_STEP 5
+#define ENCODER_PULSES_PER_STEP 3
 
 // Use this option to override the number of step signals required to
 // move between next/prev menu items.
@@ -1260,7 +1260,7 @@
 // SPEAKER/BUZZER
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
-//#define SPEAKER
+#define SPEAKER
 
 // The duration and frequency for the UI feedback sound.
 // Set these to 0 to disable audio feedback in the LCD menus.
@@ -1361,7 +1361,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 // MakerLab Mini Panel with graphic
 // controller and SD support - http://reprap.org/wiki/Mini_panel

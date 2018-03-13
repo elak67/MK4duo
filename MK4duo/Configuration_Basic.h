@@ -60,14 +60,13 @@
  *
  * 2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000
  */
-#define BAUDRATE 250000
-
+#define BAUDRATE 115200
 /**
  * User-specified version info of this build to display in [Pronterface, etc] terminal window during
  * startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
  * build by the user have been successfully uploaded into firmware.
  */
-#define STRING_CONFIG_H_AUTHOR "(none, default config)"   // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Elak's MK4duo"   // Who made the changes.
 
 /**
  * Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
@@ -123,7 +122,7 @@
  * See: https://github.com/MagoKimbra/MK4duo/blob/master/Documentation/Hardware.md *
  *                                                                                       *
  *****************************************************************************************/
-#define MOTHERBOARD BOARD_RAMPS_13_HFB
+#define MOTHERBOARD  BOARD_RAMPS_13_HFB
 /*****************************************************************************************/
 
 
@@ -168,7 +167,7 @@
  * 2 X-Box 360 203 Watts (the blue wire connected to PS_ON and the red wire to VCC)  *
  *                                                                                   *
  *************************************************************************************/
-#define POWER_SUPPLY 0
+#define POWER_SUPPLY 1
 
 // Define this to have the electronics keep the power supply off on startup.
 // If you don't know what this is leave it.
@@ -189,7 +188,7 @@
 
 // This defines the number of Driver extruder you have and use
 // 0,1,2,3,4,5,6
-#define DRIVER_EXTRUDERS 1
+#define DRIVER_EXTRUDERS 2
 /***********************************************************************/
 
 #endif /* _CONFIGURATION_BASIC_H_ */
