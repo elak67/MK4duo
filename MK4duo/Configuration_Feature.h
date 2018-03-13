@@ -1030,7 +1030,7 @@
 #define EEPROM_SETTINGS
 
 //#define EEPROM_CHITCHAT // Uncomment this to enable EEPROM Serial responses.
-#define EEPROM_SD
+//#define EEPROM_SD
 //#define EEPROM_FLASH
 //#define DISABLE_M503
 /************************************************************************************************************************/
@@ -1161,7 +1161,7 @@
 #define DISPLAY_CHARSET_HD44780 WESTERN
  
 #define SHOW_BOOTSCREEN
-//#define SHOW_CUSTOM_BOOTSCREEN
+#define SHOW_CUSTOM_BOOTSCREEN
 #define STRING_SPLASH_LINE1 "v" SHORT_BUILD_VERSION       // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 STRING_DISTRIBUTION_DATE      // will be shown during bootup in line 2
 #define BOOTSCREEN_TIMEOUT 2500
