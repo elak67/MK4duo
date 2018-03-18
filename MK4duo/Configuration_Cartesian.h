@@ -68,7 +68,7 @@
  * Displayed in the LCD "Ready" message.                                                 *
  *                                                                                       *
  *****************************************************************************************/
-#define CUSTOM_MACHINE_NAME "V0.102 Elak's MK4duo TX3" 
+#define CUSTOM_MACHINE_NAME "V0.103 Elak's MK4duo TX3" 
 /*****************************************************************************************/
 
 
@@ -565,7 +565,10 @@
  *                                                                                       *
  *****************************************************************************************/
 // Default steps per unit               X,  Y,    Z,  E0...(per extruder)
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {100, 100, 400, 90, 90, 625, 625}
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {100, 100, 400, 90, 90, 625, 625}
+// XYZ 32 microstep steps per unit               X,  Y,    Z,  E0...(per extruder)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {200, 200, 800, 90, 90, 625, 625}
+
 /*****************************************************************************************/
 
 
