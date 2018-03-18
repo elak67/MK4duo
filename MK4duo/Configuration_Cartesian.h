@@ -68,7 +68,7 @@
  * Displayed in the LCD "Ready" message.                                                 *
  *                                                                                       *
  *****************************************************************************************/
-#define CUSTOM_MACHINE_NAME "Elak's TRONXY X3 MK4duo"
+#define CUSTOM_MACHINE_NAME "V0.102 Elak's MK4duo TX3" 
 /*****************************************************************************************/
 
 
@@ -481,10 +481,10 @@
 
 /** START AUTO BED LEVELING LINEAR or AUTO BED LEVELING BILINEAR **/
 // Set the boundaries for probing (where the probe can reach).
-#define LEFT_PROBE_BED_POSITION 35
-#define RIGHT_PROBE_BED_POSITION 200
-#define FRONT_PROBE_BED_POSITION 35
-#define BACK_PROBE_BED_POSITION 200
+#define LEFT_PROBE_BED_POSITION 25
+#define RIGHT_PROBE_BED_POSITION 190
+#define FRONT_PROBE_BED_POSITION 25
+#define BACK_PROBE_BED_POSITION 190
 
 // The Z probe minimum outer margin (to validate G29 parameters).
 #define MIN_PROBE_EDGE 10

@@ -1041,10 +1041,10 @@
  ****************************************************************************************/
 #define SDSUPPORT
 
-//#define SDSLOW              // Use slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
-//#define SDEXTRASLOW         // Use even slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
+#define SDSLOW              // Use slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
+#define SDEXTRASLOW         // Use even slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
 //#define SD_CHECK_AND_RETRY  // Use CRC checks and retries on the SD communication
-#define SD_EXTENDED_DIR     // Show extended directory including file length. Don't use this with Pronterface
+//#define SD_EXTENDED_DIR     // Show extended directory including file length. Don't use this with Pronterface
 
 // Decomment this if you have external SD without DETECT_PIN
 //#define SD_DISABLED_DETECT
@@ -1260,7 +1260,7 @@
 // SPEAKER/BUZZER
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
-#define SPEAKER
+//#define SPEAKER
 
 // The duration and frequency for the UI feedback sound.
 // Set these to 0 to disable audio feedback in the LCD menus.

@@ -188,7 +188,7 @@
 
 // This defines the number of Driver extruder you have and use
 // 0,1,2,3,4,5,6
-#define DRIVER_EXTRUDERS 2
+#define DRIVER_EXTRUDERS 1
 /***********************************************************************/
 
 #endif /* _CONFIGURATION_BASIC_H_ */

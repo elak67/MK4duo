@@ -79,14 +79,22 @@
  *                                                                                                   *
  *       Use these for Testing or Development purposes. NEVER for production machine.                *
  * 998 : Dummy Table that ALWAYS reads 25 degC or the temperature defined below.                     *
- * 999 : Dummy Table that ALWAYS reads 100 degC or the temperature defined below.                    *
+ * 999 : Dummy Table that ALWAYS reads 100 degC or the temperature defined below.                    
+ * 
+ * 
+ *                                                                                                    *
  *                                                                                                   *
  *****************************************************************************************************/
-#define TEMP_SENSOR_0 1
+//#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 2
+
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_BED 0
+
+//#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 2
+
 #define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
 
@@ -145,15 +153,15 @@
 // Preheat Constants
 #define PREHEAT_1_TEMP_HOTEND 190
 #define PREHEAT_1_TEMP_BED     60
-#define PREHEAT_1_FAN_SPEED   255   // Insert Value between 0 and 255
+#define PREHEAT_1_FAN_SPEED   50// Insert Value between 0 and 255
 
 #define PREHEAT_2_TEMP_HOTEND 240
 #define PREHEAT_2_TEMP_BED    100
-#define PREHEAT_2_FAN_SPEED   255   // Insert Value between 0 and 255
+#define PREHEAT_2_FAN_SPEED   50   // Insert Value between 0 and 255
 
 #define PREHEAT_3_TEMP_HOTEND 230
 #define PREHEAT_3_TEMP_BED     60
-#define PREHEAT_3_FAN_SPEED   255   // Insert Value between 0 and 255
+#define PREHEAT_3_FAN_SPEED   50   // Insert Value between 0 and 255
 /*****************************************************************************************/
 
 
@@ -255,7 +263,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-#define PIDTEMPBED false
+#define PIDTEMPBED true
 
 #define BED_HYSTERESIS        2 // Only disable heating if T>target+BED_HYSTERESIS and enable heating if T>target-BED_HYSTERESIS (works only if BED_LIMIT_SWITCHING is enabled)
 #define BED_CHECK_INTERVAL 5000 // ms between checks in bang-bang control
@@ -271,8 +279,8 @@
 // 120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
 // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
 #define DEFAULT_bedKp   10.00
-#define DEFAULT_bedKi    0.1
-#define DEFAULT_bedKd  300.0
+#define DEFAULT_bedKi    0.023
+#define DEFAULT_bedKd  305.4
 
 // FIND YOUR OWN: "M303 H-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 /***********************************************************************/
@@ -392,8 +400,8 @@
  * Put THERMAL PROTECTION COOLER at true to enable this feature for the cooler.   *
  *                                                                                *
  **********************************************************************************/
-#define THERMAL_PROTECTION_HOTENDS false
-#define THERMAL_PROTECTION_BED false
+#define THERMAL_PROTECTION_HOTENDS true
+#define THERMAL_PROTECTION_BED true
 #define THERMAL_PROTECTION_CHAMBER false
 #define THERMAL_PROTECTION_COOLER false
 
@@ -425,7 +433,7 @@
  *                                                                     *
  ***********************************************************************/
 #define PREVENT_COLD_EXTRUSION
-#define EXTRUDE_MINTEMP 170                 // Degree Celsius
+#define EXTRUDE_MINTEMP 170               // Degree Celsius
 
 // This option prevents a single extrusion longer than EXTRUDE_MAXLENGTH.
 //#define PREVENT_LENGTHY_EXTRUDE
