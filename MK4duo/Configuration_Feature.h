@@ -1764,7 +1764,9 @@
 //#define USE_MICROSTEPS
 
 // X Y Z E - [1,2,4,8,16,32]
-#define MICROSTEP_MODES {16, 16, 16, 16}
+//#define MICROSTEP_MODES {16, 16, 16, 16}
+#define MICROSTEP_MODES {32, 32, 32, 16}
+
 /***********************************************************************/
 
 
